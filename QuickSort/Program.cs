@@ -95,6 +95,10 @@ namespace QUickSort
                 //Sort the list on the right of pivot using sort
                 q_sort(j + 1, high);
             }
+            void display()
+            {
+
+            }
         }
     }
 }
