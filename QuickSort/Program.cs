@@ -89,6 +89,11 @@ namespace QUickSort
                     swap(low, j);
                     mov_count++;
                 }
+                //sort the list on the left of pivot using quick sort
+                q_sort(low, j - 1);
+
+                //Sort the list on the right of pivot using sort
+                q_sort(j + 1, high);
             }
         }
     }
