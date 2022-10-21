@@ -97,7 +97,17 @@ namespace QUickSort
             }
             void display()
             {
+                Console.WriteLine("====================");
+                Console.WriteLine("Sorted Array Element");
+                Console.WriteLine("====================");
 
+                for (int j = 0; j < n; j++)
+                {
+                    Console.Write(arr[j]);
+                }
+
+                Console.WriteLine("Number Comparison" + cmp_count);
+                Console.WriteLine("Number of data elements" + mov_count);
             }
         }
     }
