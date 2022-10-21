@@ -16,7 +16,8 @@ namespace QUickSort
         {
             while (true)
             {
-
+                Console.WriteLine("Enter the number of elements in the array");
+                string s = Console.ReadLine();
             }
         }
     }
