@@ -56,6 +56,32 @@ namespace QUickSort
             i = low + 1;
             j = high;
             pivot = arr[low];
+
+            while (i<= j)
+            {
+                //search for an element greater than pivot
+                while ((arr[i] <= pivot) && (i <= high))
+                {
+                    i++;
+                    cmp_count++;
+                }
+                cmp_count++;
+
+                //search for an elemenrt less than or equal to pivot
+                while ((arr[j] > pivot) && (j >= low))
+                {
+                    j--;
+                    cmp_count++;
+                }
+                cmp_count++;
+                
+                if (i < j) //if the greater elemenet is on the leftt of the element 
+                {
+                    //swap th element at index i whit the element at index j
+                    swap(i, j);
+                    mov_count++;
+                }
+            }
         }
     }
 }
