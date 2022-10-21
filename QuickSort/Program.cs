@@ -24,6 +24,17 @@ namespace QUickSort
                 else
                     Console.WriteLine("Array can have maximum 20 elements");
             }
+            Console.WriteLine("===================");
+            Console.WriteLine("Enter Array Element");
+            Console.WriteLine("===================");
+
+            //get array element
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write("<" + (i + 1) + ">");
+                string s1 = Console.ReadLine();
+                arr[i] = Int32.Parse(s1);
+            }
         }
     }
 }
