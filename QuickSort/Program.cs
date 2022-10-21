@@ -111,7 +111,23 @@ namespace QUickSort
             }
             int getSize()
             {
-                return (n);            }
+                return (n);
+            }
+            static void Main(string[]args)
+            {
+                //Declaring the object of tge class
+                Program myList = new Program();
+                //Accept array elements
+                myList.input();
+                //Calling the sorting function
+                //first call to quick sort algorithm
+                myList.q_sort(0, myList.getSize() - 1);
+                myList.display();
+                // To exit form console
+                Console.WriteLine("press enter to exit");
+                Console.Read();
+
+            }
         }
     }
 }
