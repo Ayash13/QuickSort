@@ -109,6 +109,9 @@ namespace QUickSort
                 Console.WriteLine("Number Comparison" + cmp_count);
                 Console.WriteLine("Number of data elements" + mov_count);
             }
+            int getSize()
+            {
+                return (n);            }
         }
     }
 }
