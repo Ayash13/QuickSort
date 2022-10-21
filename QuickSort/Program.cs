@@ -46,7 +46,16 @@ namespace QUickSort
         }
         public void q_sort(int low, int high)
         {
+            int pivot, i, j;
+            if (low > high)
+                return;
+            //partition the list into two parts
+            //one containing ements less than or equal to pivot
+            //other containing elements greather than pivot
 
+            i = low + 1;
+            j = high;
+            pivot = arr[low];
         }
     }
 }
