@@ -81,6 +81,14 @@ namespace QUickSort
                     swap(i, j);
                     mov_count++;
                 }
+                //J now contains the index of the last element in the sorted list 
+
+                if (low < j)
+                {
+                    //Move the pivot to its correct position in the list
+                    swap(low, j);
+                    mov_count++;
+                }
             }
         }
     }
