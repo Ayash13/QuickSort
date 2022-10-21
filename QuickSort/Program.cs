@@ -95,39 +95,40 @@ namespace QUickSort
                 //Sort the list on the right of pivot using sort
                 q_sort(j + 1, high);
             }
-            void display()
-            {
-                Console.WriteLine("====================");
-                Console.WriteLine("Sorted Array Element");
-                Console.WriteLine("====================");
+            
+        }
+        void display()
+        {
+            Console.WriteLine("====================");
+            Console.WriteLine("Sorted Array Element");
+            Console.WriteLine("====================");
 
-                for (int j = 0; j < n; j++)
-                {
-                    Console.Write(arr[j]);
-                }
-
-                Console.WriteLine("Number Comparison" + cmp_count);
-                Console.WriteLine("Number of data elements" + mov_count);
-            }
-            int getSize()
+            for (int j = 0; j < n; j++)
             {
-                return (n);
+                Console.Write(arr[j]);
             }
-            static void Main(string[]args)
-            {
-                //Declaring the object of tge class
-                Program myList = new Program();
-                //Accept array elements
-                myList.input();
-                //Calling the sorting function
-                //first call to quick sort algorithm
-                myList.q_sort(0, myList.getSize() - 1);
-                myList.display();
-                // To exit form console
-                Console.WriteLine("press enter to exit");
-                Console.Read();
 
-            }
+            Console.WriteLine("Number Comparison" + cmp_count);
+            Console.WriteLine("Number of data elements" + mov_count);
+        }
+        int getSize()
+        {
+            return (n);
+        }
+        static void Main(string[] args)
+        {
+            //Declaring the object of tge class
+            Program myList = new Program();
+            //Accept array elements
+            myList.input();
+            //Calling the sorting function
+            //first call to quick sort algorithm
+            myList.q_sort(0, myList.getSize() - 1);
+            myList.display();
+            // To exit form console
+            Console.WriteLine("press enter to exit");
+            Console.Read();
+
         }
     }
 }
